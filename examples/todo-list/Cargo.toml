@@ -1,11 +1,21 @@
 [package]
 edition = "2021"
-name    = "example-todo-list"
+name    = "examples-todo-list"
 publish = false
 version = "0.1.0"
+
+[dependencies]
+color-eyre = "0.6.2"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies.axum]
-features = [""]
-version  = "0.2"
+features = ["base64", "headers", "ws"]
+version  = "0.5.13"
+
+[dependencies.axum-liveview]
+path = "../../axum-liveview"
+
+[dependencies.tokio]
+features = ["full"]
+version  = "1.17.0"

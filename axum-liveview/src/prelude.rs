@@ -1,1 +1,3 @@
-pub(crate) use axum_liveview_core::prelude::*;
+//! Library prelude
+
+pub use axum_liveview_core::prelude::*;

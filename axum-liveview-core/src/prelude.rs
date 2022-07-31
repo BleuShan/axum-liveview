@@ -1,19 +1,8 @@
 //! Core library prelude
 
 #![allow(unused_imports)]
-pub use color_eyre::{
-    self,
-    eyre::{
-        format_err,
-        Result,
-        WrapErr,
-    },
-};
-pub use futures::{
-    self,
-    prelude::*,
-};
-pub use once_cell;
+
+pub use async_trait::async_trait;
 
 pub use derive_more::{
     AsMut,
@@ -27,9 +16,13 @@ pub use derive_more::{
     IndexMut,
     Into,
     IntoIterator,
+    IsVariant,
     TryInto,
 };
-
+pub use futures::{
+    self,
+    prelude::*,
+};
 pub use regex::{
     self,
     Error as RegexError,
@@ -61,6 +54,18 @@ pub use std::{
     result::Result as StdResult,
     str::FromStr,
 };
+pub use thiserror::Error;
+pub use tracing::{
+    self,
+    debug,
+    error,
+    info,
+    instrument,
+    trace,
+    warn,
+};
+pub use tracing_appender;
+pub use tracing_subscriber;
 
 /// An alias for the `()` type. Used to get a more uniform syntax.
 pub type Unit = ();

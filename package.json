@@ -1,0 +1,29 @@
+{
+  "name": "@axum-liveview/workspace",
+  "version": "0.1.0",
+  "author": "Philippe Lafontaine",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "browserslist": "> 5%, not dead",
+  "devDependencies": {
+    "@babel/core": "^7.18.9",
+    "@babel/eslint-parser": "^7.18.9",
+    "@babel/eslint-plugin": "^7.17.7",
+    "@babel/preset-env": "^7.18.9",
+    "eslint": "^8.20.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-import-resolver-node": "^0.3.6",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.0.0",
+    "prettier": "^2.7.1",
+    "stylelint": "^14.9.1",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-recommended-scss": "^7.0.0",
+    "stylelint-config-standard-scss": "^5.0.0"
+  },
+  "packageManager": "yarn@3.2.2"
+}
