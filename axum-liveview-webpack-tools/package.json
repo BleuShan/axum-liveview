@@ -1,0 +1,17 @@
+{
+  "name": "axum-liveview-webpack-tools",
+  "private": true,
+  "packageManager": "yarn@3.2.2",
+  "type": "module",
+  "exports": {
+    ".": "./lib.mjs",
+    "./plugins": "./lib/plugins.mjs",
+    "./plugins/wasm-bindgen": "./lib/plugins/wasm-bindgen.mjs"
+  },
+  "dependencies": {
+    "chalk": "4",
+    "upath": "^2.0.1",
+    "webpack": "^5.74.0",
+    "webpack-sources": "^3.2.3"
+  }
+}

@@ -5,9 +5,9 @@ publish = false
 version = "0.1.0"
 
 [dependencies]
-color-eyre = "0.6.2"
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+color-eyre         = "0.6.2"
+tracing-appender   = "0.2.2"
+tracing-subscriber = "0.3.15"
 
 [dependencies.axum]
 features = ["base64", "headers", "ws"]

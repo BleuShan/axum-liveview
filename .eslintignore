@@ -2,6 +2,6 @@
 .yarn
 .git
 out
-**/wwwroot
+**/dist
 .pnp.cjs
 coverage

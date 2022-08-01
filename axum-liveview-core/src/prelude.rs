@@ -64,8 +64,6 @@ pub use tracing::{
     trace,
     warn,
 };
-pub use tracing_appender;
-pub use tracing_subscriber;
 
 /// An alias for the `()` type. Used to get a more uniform syntax.
 pub type Unit = ();

@@ -1,0 +1,34 @@
+[package]
+edition = "2021"
+name    = "axum-liveview-client"
+version = "0.1.0"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+js-sys       = "0.3.59"
+wasm-bindgen = "0.2.82"
+tracing-wasm = "0.2.1"
+console_error_panic_hook = "0.1.7"
+wee_alloc = "0.4.5"
+
+[dependencies.axum-liveview-core]
+path = "../axum-liveview-core"
+
+[dependencies.web-sys]
+features = [
+    "BinaryType",
+    "Blob",
+    "Document",
+    "Element",
+    "ErrorEvent",
+    "FileReader",
+    "HtmlElement",
+    "MessageEvent",
+    "Node",
+    "ProgressEvent",
+    "WebSocket",
+    "Window",
+]
+version = "0.3.59"
