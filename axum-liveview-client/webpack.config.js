@@ -37,7 +37,7 @@ export default function configure(env, argv) {
       'axum-liveview-client': resolvePath('src', 'main'),
     },
     experiments: {
-      asyncWebAssembly: true,
+      futureDefaults: true,
       outputModule: true,
     },
     mode,
@@ -45,7 +45,6 @@ export default function configure(env, argv) {
       flagIncludedChunks: true,
       providedExports: true,
       sideEffects: true,
-      usedExports: true,
       removeEmptyChunks: true,
       concatenateModules: false,
       runtimeChunk: 'single',
@@ -110,7 +109,10 @@ export default function configure(env, argv) {
           },
         },
       }),
-      new WasmBindgenPlugin({}),
+      new WasmBindgenPlugin({
+        outDir: resolvePath('src', 'generated'),
+        referenceTypes: false,
+      }),
     ],
     resolve: {
       extensions: ['.mjs', '.js', '.ts'],

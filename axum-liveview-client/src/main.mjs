@@ -1,2 +1,3 @@
+import wasm from './generated/axum-liveview-client-wasm.js'
 
-export function load() {}
+export async function load() {}

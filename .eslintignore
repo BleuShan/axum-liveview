@@ -5,3 +5,4 @@ out
 **/dist
 .pnp.cjs
 coverage
+**/generated
